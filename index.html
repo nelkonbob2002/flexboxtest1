@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css"/> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto's MDN web dev lessons page</title>
+</head>
+<body>
+  <h1>This is the header 1</h1>
+  <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="this is pavaprojects image" />
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequuntur sunt officiis. Libero ipsam maiores, eaque vitae facere tenetur ad blanditiis repellendus quaerat repudiandae repellat at voluptatum doloremque, voluptates laboriosam? <strong>this is stronged</strong>, dolor sit amet consectetur adipisicing elit. Commodi qui obcaecati facilis hic consequatur in repellendus itaque eius quas corporis voluptatum voluptas nemo, dicta ut maxime dolor exercitationem molestias aut?
+  </p>
+
+  <p>
+    This is that list items to buy tomorrow at the market
+  </p>
+  <p><img src="" id="image" width="150px" height=""/></p>
+  <ol>
+    <li>Bread</li>
+    <li class="second">Rice</li>
+    <li>Meat <em>and</em> potatoes</li>
+    <li>Spoons</li>
+    <li>Milk</li>
+  </ol>
+  <script>
+  //   console.log('fetching an image here below.')
+  // fetch('teeest.jpg').then( reply => reply.blob()).then( blob => document.querySelector('#image').src = URL.createObjectURL(blob))
+  //.catch(err => console.error(err));
+
+  getImg().catch(error);
+
+    async function getImg() {
+     let response = await fetch('test.jpg');
+     let blob = await response.blob();
+     document.querySelector('#image').src = URL.createObjectURL(blob);
+    }
+
+
+
+    </script>
+  <a href="https://thislinktonowhere.com" title="This is the title of this link and there is more to this than meets the eye." class="links" target="_blank">This is a link, but to where?</a>
+</body>
+</html>

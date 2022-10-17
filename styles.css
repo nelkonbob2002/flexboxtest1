@@ -1,0 +1,58 @@
+h1 {
+    font-size: 5rem;
+    color: blueviolet;
+}
+
+p {
+    color: green;
+}
+
+li {
+    list-style-type: square;
+}
+
+/* Selecting a class contained inside an element, like the li tag in this case. */
+li.second {
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* Selecting a class with a dot */
+.second {
+    color: blue;
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* Selecting an element inside another element - add space between the 2 element tags*/
+
+li em {
+    color: pink;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Selecting and setting different styling based on state. Before, after and on hover of link */
+a:link {
+    color: aqua;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* selects any <span> that is inside a <p>, which is inside an <article>  */
+article p span {
+    
+}
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1> This is due to using a plus inbetween the elements */
+h1 + ul + p {
+}
